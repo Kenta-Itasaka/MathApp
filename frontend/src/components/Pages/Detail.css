@@ -1,0 +1,35 @@
+.backButtonD {
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 1%;
+  text-align: right;
+}
+
+.titleD {
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 1%;
+  text-align: left;
+}
+
+.descriptionD {
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 1%;
+  text-align: left;
+}
+
+.pdfarea {
+  width: 70%;
+  height: 90vh;
+  margin: 0 auto;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  overflow: scroll;
+  border: solid 1px;
+}
+
+.react-pdf__Page {
+  display: flex;
+  justify-content: center;
+}

@@ -69,8 +69,6 @@ const usePostArticle = (): ReturnValue => {
       }
 
       exchgData.status = 'Uploaded';
-      console.log(exchgData)
-      console.log(JSON.stringify(exchgData))
       void (await putData(putApiPath, JSON.stringify(exchgData)));
     } catch (error) {
       // return エラーページ

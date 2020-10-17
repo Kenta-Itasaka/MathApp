@@ -1,0 +1,34 @@
+.backButtonPA {
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 1%;
+  text-align: right;
+}
+
+.titlePA {
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 1%;
+  text-align: left;
+}
+
+.descriptionPA {
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 1%;
+  text-align: left;
+}
+
+.settingFile {
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 1%;
+  text-align: left;
+}
+
+.submitButton {
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 1%;
+  text-align: right;
+}

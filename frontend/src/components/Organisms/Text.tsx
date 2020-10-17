@@ -1,5 +1,6 @@
 /* eslint-disable jsx-a11y/label-has-associated-control */
 import React, { FC } from 'react';
+import TextField from '@material-ui/core/TextField';
 
 export interface TextProps {
   inputText: string;
@@ -13,13 +14,13 @@ const Text: FC<TextProps> = ({
   return (
     <>
       <div>
-        <label>タイトル</label>
-        <input
-          type="text"
+        <TextField
+          label="タイトル"
           value={inputText}
           onChange={(event) => {
             setInputText(event.target.value);
           }}
+          fullWidth={true}
         />
       </div>
     </>

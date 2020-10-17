@@ -5,6 +5,8 @@ import ClickEventButton, {
 } from '../Organisms/ClickEventButton';
 import Text, { TextProps } from '../Organisms/Text';
 import Textarea, { TextareaProps } from '../Organisms/Textarea';
+import MovePageButton from '../../containers/Organisms/MovePageButton';
+import "./PostingArticle.css";
 
 export type PostingArticleProps = TextProps &
   TextareaProps &
@@ -30,14 +32,25 @@ const PostingArticle: FC<PostingArticleProps> = ({
 
   return (
     <>
-      <Text inputText={inputText} setInputText={setInputText} />
-      <Textarea
-        inputTextarea={inputTextarea}
-        setInputTextarea={setInputTextarea}
-      />
-      <SettingFile setAcceptedFiles={setAcceptedFiles} />
+      <div className="backButtonPA">
+        <MovePageButton displayStr="戻る" destination="/" />
+      </div>
+      <div className="titlePA">
+        <Text inputText={inputText} setInputText={setInputText} />
+      </div>
+      <div className="descriptionPA">
+        <Textarea
+          inputTextarea={inputTextarea}
+          setInputTextarea={setInputTextarea}
+        />
+      </div>
+      <div className="settingFile">
+        <SettingFile setAcceptedFiles={setAcceptedFiles} />
+      </div>
       <h1>{filename}</h1>
-      <ClickEventButton onClick={onClick} displayStr="ファイル送信" />
+      <div className="submitButton">
+        <ClickEventButton onClick={onClick} displayStr="送信" />
+      </div>
     </>
   );
 };

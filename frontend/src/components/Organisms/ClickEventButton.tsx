@@ -1,4 +1,5 @@
 import React, { FC } from 'react';
+import Button from '@material-ui/core/Button';
 
 export type ClickEventButtonProps = {
   onClick: () => void;
@@ -10,9 +11,9 @@ const ClickEventButton: FC<ClickEventButtonProps> = ({
   displayStr = 'default',
 }) => {
   return (
-    <button type="button" onClick={onClick}>
+    <Button variant="contained" color="primary" onClick={onClick}>
       {displayStr}
-    </button>
+    </Button>
   );
 };
 
