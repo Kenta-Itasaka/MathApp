@@ -32,7 +32,8 @@ const ArticleList: FC<ArticleProps> = ({ articles }) => {
               <ListItem divider component={Link} to={`/detail/${article.articleId}`}>
                 <div>
                 <ListItemText primary={article.title}/>
-                <ListItemText primary={article.description}/>
+                {/* Todo */}
+                {/* <ListItemText primary={article.description}/> */}
                 </div>
               </ListItem>
             </React.Fragment>
