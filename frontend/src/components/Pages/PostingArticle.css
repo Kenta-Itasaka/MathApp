@@ -9,21 +9,24 @@
   width: 50%;
   margin: 0 auto;
   margin-top: 1%;
-  text-align: left;
 }
 
 .descriptionPA {
   width: 50%;
   margin: 0 auto;
   margin-top: 1%;
-  text-align: left;
 }
 
 .settingFile {
   width: 50%;
   margin: 0 auto;
   margin-top: 1%;
-  text-align: left;
+}
+
+.filename {
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 1%;
 }
 
 .submitButton {

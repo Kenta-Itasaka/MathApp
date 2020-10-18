@@ -47,7 +47,9 @@ const PostingArticle: FC<PostingArticleProps> = ({
       <div className="settingFile">
         <SettingFile setAcceptedFiles={setAcceptedFiles} />
       </div>
-      <h1>{filename}</h1>
+      <div className="filename">
+        <h1>{filename}</h1>
+      </div>
       <div className="submitButton">
         <ClickEventButton onClick={onClick} displayStr="送信" />
       </div>
