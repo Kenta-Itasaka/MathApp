@@ -20,7 +20,7 @@ const Detail: FC<DetailProps> = ({ article }) => {
   const pages = [];
   for (let i = 1; i <= numPages; i++) {
     // Todo
-    pages.push(<Page className='page' key={i} pageNumber={i} width={1000} renderMode="svg"/>);
+    pages.push(<Page className='page' key={i} pageNumber={i} width={800} renderMode="svg"/>);
 
   }
 
